@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cloud-Based Resume Analyzer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f6ff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2b4eff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        h2 {
+            color: #2b4eff;
+        }
+        input[type="file"] {
+            margin-top: 10px;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #2b4eff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #1f39b8;
+        }
+        .output {
+            margin-top: 20px;
+            background: #eef1ff;
+            padding: 15px;
+            border-radius: 6px;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+            background-color: #2b4eff;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Cloud-Based Resume Analyzer</h1>
+    <p>Analyze resumes quickly using cloud technology</p>
+</header>
+
+<section>
+    <h2>Upload Resume</h2>
+    <p>Select a resume file (PDF/DOCX) to analyze:</p>
+    <input type="file" id="resume">
+    <br>
+    <button onclick="analyzeResume()">Analyze Resume</button>
+
+    <div class="output" id="result" style="display:none;">
+        <h2>Analyzed Output</h2>
+        <p><strong>Name:</strong> Abishan</p>
+        <p><strong>Email:</strong> abishanarjunan2007@email.com</p>
+        <p><strong>Phone:</strong> 7904250670</p>
+        <p><strong>Skills:</strong> Python, Cloud Computing, HTML, CSS</p>
+        <p><strong>Education:</strong> B.C.A Clould computing</p>
+        <p><strong>Experience:</strong> 1 Years</p>
+    </div>
+</section>
+
+<section>
+    <h2>About This Project</h2>
+    <p>
+        This Cloud-Based Resume Analyzer helps recruiters and job seekers by
+        automatically extracting important details from resumes using cloud technology.
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Cloud Resume Analyzer Project</p>
+</footer>
+
+<script>
+    function analyzeResume() {
+        document.getElementById("result").style.display = "block";
+        alert("Resume analyzed successfully (Demo Output)");
+    }
+</script>
+
+</body>
+</html>
